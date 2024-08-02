@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:  Roboto, Poppins, sans-serif;
+}
+
+.App{
+  height: 100vh;
+  width: 100vw;
+}
+
+.login {
+  background-image: url(../src/assets/Login-bg.jpg);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Login-box, .signUp-box{
+  height: 500px;
+  width: 500px;
+  background: rgba(255, 255, 255, 0.25);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.527);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form, .signUp-form{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+:is(.login-form, .signUp-form)>input{
+  height: 45px;
+  width: 100%;
+  /* background: none; */
+  border: 1px solid white;
+  border-radius: 100px;
+  padding-left: 30px;
+  outline: none;
+}
+
+:is(.login-form, .signUp-form)>button{
+  height: 45px;
+  width: 100%;
+  border: none;
+  border-radius: 100px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+:is(.login-form, .signUp-form)>button:hover{
+  background: none;
+  border: 1px solid white;
+}
+
+.sign-up{
+  background-image: url(../src/assets/SignUp-bg.jpg);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Dashboard start */
+
+.Dashboard{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar{
+  height: 100%;
+  width: 200px;
+  background-color: #99A3B3;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar>ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 20px;
+}
+
+.sidebar>ul>li{
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 10px
+}
+
+.sidebar>ul>li:hover{
+  background-color: #2F4F7F;
+}
+
+.active{
+  background-color: #2F4F7F;
+}
+
+.Dashboard>h1{
+  color: #2F4F7F;
+  margin: 0 auto;
+  font-size: 48px;
+  text-decoration: underline;
+}
