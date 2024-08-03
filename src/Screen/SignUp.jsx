@@ -32,7 +32,6 @@ const SignUp = () => {
     })
   }
 
-  // let [record, setRecords] = useState([])
 
 
   return (
@@ -44,7 +43,7 @@ const SignUp = () => {
                 <input value={registration.username} type="text" required placeholder='Enter username' onChange={(e)=> setRegistration({...registration, username:e.target.value})}/>
                 <input value={registration.password} type="password" required placeholder='Create password' onChange={(e)=> setRegistration({...registration, password:e.target.value})}/>
                 <button onClick={handleSubmit}>Sign Up</button>
-                <span>Already have account? <Link to='/'>SignUp</Link></span>
+                <span>Already have account? <Link to='/'>Login</Link></span>
             </form>
         </div>
     </div>

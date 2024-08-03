@@ -39,7 +39,7 @@ const Login = () => {
                     <span><a href="#">Forgot password?</a></span>
                 </div>
                 <button onClick={handleCheck}>Login</button>
-                <span>Don't have account? <Link to='/signUp'>SignUp</Link></span>
+                <span>Don't have account? <Link to='/signUp'>Register</Link></span>
             </form>
         </div>
     </div>
