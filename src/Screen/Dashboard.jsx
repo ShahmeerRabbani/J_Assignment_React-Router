@@ -1,5 +1,8 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
+import Navbar from '../Components/Navbar/Navbar';
+import Home from './Home';
+import ProductDetail from './ProductDetail';
 
 const Dashboard = () => {
 
@@ -12,16 +15,8 @@ const Dashboard = () => {
 
   return (
     <div className='Dashboard'>
-      <div className="sidebar">
-        <ul>
-          <li className='active'>Home</li>
-          <li>About</li>
-          <li>Products</li>
-          <li>Settings</li>
-          <li style={{textDecoration: 'underline', color: 'blue'}} onClick={handleLogOut}>Log out</li>
-        </ul>
-      </div>
-      <h1>Dashboard</h1>
+      <Navbar/>
+      <Outlet/>
     </div>
   )
 }
