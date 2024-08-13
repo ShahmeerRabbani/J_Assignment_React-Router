@@ -1,0 +1,28 @@
+.AboutCard{
+    height: 220px;
+    width: 350px;
+    position: relative;
+}
+
+.AboutCard:hover{
+    opacity: .4;
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: seagreen;
+    background-position: center;
+    background-size: cover;   
+    opacity: .6; 
+    border-radius: 10px;
+}
+
+.About_title{
+    position: absolute;
+    height: 40px;
+    width: auto;
+    bottom: 30px;
+    left: 20px;
+    text-align: start ;
+}

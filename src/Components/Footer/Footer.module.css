@@ -1,0 +1,43 @@
+.Footer{
+    padding: 100px 50px;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Footer > ul, li{
+    list-style: none;
+    display: block;
+    line-height: 22px;
+}
+
+.Footer > ul > li:nth-child(1){
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.logo_side{
+    width: 170px;
+    height: 200px;
+    line-height: 23px;
+}
+
+.logo_side > span > img{
+    max-width: 140px;
+    height: 80px;
+}
+
+.copyWrite{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.copyWrite a{
+    text-decoration: none;
+    font-weight: 600;
+}

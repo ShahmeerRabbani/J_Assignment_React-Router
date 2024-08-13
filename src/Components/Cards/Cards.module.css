@@ -10,12 +10,21 @@
     flex: 2;
     display: flex;
     overflow: hidden;
+    position: relative;
 }
 
 img{
     height: 100%;
     width: 100%;
     object-fit: contain;
+}
+
+.cate{
+    position: absolute;
+    height: 20px;
+    width: auto;
+    text-transform: capitalize;
+    background-color: #FFC107;
 }
 
 .cardContext{

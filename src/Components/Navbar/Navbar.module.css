@@ -1,6 +1,14 @@
 .Navbar{
     width: 100%;
-    padding: 30px 50px;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_img{
+   max-width: 120px;
+
+
 }
 
 ul{
@@ -9,11 +17,12 @@ ul{
     float: right;
 }
 
-li{
-    list-style: none;
+.Navbar > li{
     display: inline;
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-    font-style: none;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.active{
+    text-decoration: underline;
 }
