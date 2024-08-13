@@ -19,7 +19,7 @@ const Login = () => {
     }
     else if(checkForm.username === user.username && checkForm.password === user.password){
       alert('Login Successful')
-      navigate('/dashboard', {replace: true})
+      navigate('/home', {replace: true})
     }
     else{
       alert('Invalid Credentials')
