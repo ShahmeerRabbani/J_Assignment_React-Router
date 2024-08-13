@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet, useNavigate } from "react-router-dom";
+import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
 import { RiDoubleQuotesR } from "react-icons/ri";
@@ -12,6 +12,10 @@ const Home = () => {
     localStorage.removeItem("SignUp");
     navigate("/");
   };
+
+  const location = useLocation()
+
+  const isHome = location.pathname == '/home';
 
   return (
     <div className="Dashboard">
@@ -38,7 +42,7 @@ const Home = () => {
 
       <div className="Product_preview">
         <h1 style={{textAlign: 'center'}}>Featured Products</h1>
-        <Products/>
+        <Products isHome = {isHome}/>
       </div>
 
       <Footer />

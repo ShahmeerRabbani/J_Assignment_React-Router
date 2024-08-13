@@ -4,7 +4,7 @@ import { Link, NavLink, useNavigate } from 'react-router-dom';
 import LogoImg from '../../assets/logo.png'
 import { MdShoppingCart } from 'react-icons/md';
 
-const Navbar = () => {
+const Navbar = ({isHome}) => {
   
   const LinkStyle = {
     color: 'white',
@@ -15,7 +15,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className={styles.Navbar}>
+    <div className={styles.Navbar} style={{display: isHome ? 'none' : ''}}>
       <div className={styles.logo_img}>
         <img src={LogoImg} alt="" />
       </div>

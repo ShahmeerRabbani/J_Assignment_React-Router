@@ -5,7 +5,7 @@ import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
 import MultipleSelect from "../Components/Select/SelectFile";
 
-const Products = () => {
+const Products = ({isHome}) => {
   const [listitem, setListItem] = useState([]);
 
   useEffect(() => {
@@ -19,9 +19,9 @@ const Products = () => {
 
   return (
       <div className="Pro_card_parent">
-        <Navbar />
+        <Navbar isHome = {isHome}/>
         <div className="Product_Container">
-          <div className="selection">
+          <div className="selection" style={{display: isHome ? 'none' : ''}}>
             <h1 style={{fontSize: '52px'}}>All Products</h1>
             <MultipleSelect/>
           </div>
@@ -44,7 +44,7 @@ const Products = () => {
         })}
         </div>
         </div>
-        <Footer/>
+        <Footer isHome = {isHome}/>
       </div>
   );
 };

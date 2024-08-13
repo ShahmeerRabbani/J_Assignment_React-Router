@@ -16,8 +16,7 @@ const Cards = ({price, title, img, desc, id, rating, category}) => {
     }
 
     const location = useLocation()
-    const isHome = location.pathname === `/product/${id}`
-    console.log(isHome)
+    const isCard = location.pathname === `/product/${id}`
   return (
     <div className={styles.cardbox}>
       <div className={styles.cardImg}>
@@ -35,7 +34,7 @@ const Cards = ({price, title, img, desc, id, rating, category}) => {
         starRatedColor='#FFC107'
         />
         <button style={{
-          display: isHome ? 'none': '',
+          display: isCard ? 'none': '',
         }} onClick={handleNavigate}>Add</button>
       </div>
     </div>
