@@ -56,23 +56,13 @@ const ProductDetail = () => {
             <span>Category: {e.category}</span>
           </div>
           </div>
-          // <Cards
-          //   key={i}
-          //   id={e.id}
-          //   title={e.title}
-          //   desc={e.description}
-          //   price={e.price}
-          //   img={e.image}
-          //   rating={e.rating}
-          //   display={displayNone}
-          // />
         );
       })}
 
       <div className="divider"></div>
       <div className="related_product">
         <h1>Related Products</h1>
-        <div style={{display: 'flex', marginTop: '60px'}}>
+        <div style={{display: 'flex', marginTop: '60px', flexWrap: 'wrap', justifyContent: 'center', gap: 20}}>
           {filterCategory.map((e, i)=>{
             return (
               <Cards
